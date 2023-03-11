@@ -14,6 +14,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Restaurant',
       minify: false,
+      clean: true,
     }),
   ],
   module: {
