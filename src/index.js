@@ -8,13 +8,17 @@ function createElementWithId(element,id) {
     return elem;
 }
 
-function img() {
-    const splash = new Image();
-    splash.src = Splash;
+function importImage(source) {
+    const temp = new Image();
+    temp.src = source;
 
-    document.body.appendChild(splash);
-    tab1();
+    return temp;
+    
 }
 
+
+
 document.body.appendChild(createElementWithId('div','content'));
-img();
+
+document.body.appendChild(importImage(Splash));
+tab1();
