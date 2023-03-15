@@ -1,6 +1,6 @@
-import './style.css';
-import Splash from './food-splash.jpg';
-import tab1 from './tab1';
+import "./style.css";
+import Splash from "./food-splash.jpg";
+import tab1 from "./tab1";
 
 function createElementWithId(element, id) {
   const elem = document.createElement(element);
@@ -15,7 +15,7 @@ function importImage(source) {
   return temp;
 }
 
-document.body.appendChild(createElementWithId('div', 'content'));
+document.body.appendChild(createElementWithId("div", "content"));
 
 document.body.appendChild(importImage(Splash));
 tab1();
