@@ -15,7 +15,7 @@ function importImage(source) {
   return temp;
 }
 
+document.body.appendChild(importImage(Splash));
 document.body.appendChild(createElementWithId("div", "content"));
 
-document.body.appendChild(importImage(Splash));
 tab1();
