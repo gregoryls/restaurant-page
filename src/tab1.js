@@ -4,6 +4,13 @@ export function createElementWithId(element, id) {
   return elem;
 }
 
+function createReview() {
+  const review = createElementWithId("div", "review");
+  review.textContent = "test review";
+  return review;
+}
+
 export default function tab1() {
-  console.log("tab1 test");
+  const content = document.getElementById("content");
+  content.appendChild(createReview());
 }
