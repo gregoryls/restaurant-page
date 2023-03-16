@@ -1,12 +1,6 @@
 import "./style.css";
 import Splash from "./food-splash.jpg";
-import tab1 from "./tab1";
-
-function createElementWithId(element, id) {
-  const elem = document.createElement(element);
-  elem.id = id;
-  return elem;
-}
+import tab1, { createElementWithId } from "./tab1";
 
 function importImage(source) {
   const temp = new Image();
