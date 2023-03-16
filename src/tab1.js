@@ -14,7 +14,13 @@ function createReview() {
 
 function createHours() {
   const hours = createElementWithId("div", "hours");
-  const hoursList = createElementWithId("ol");
+  // TODO put hours inside a probabably h2 header
+  hours.textContent = "Hours";
+  const hoursList = createElementWithId("ul");
+  for (let i = 0; i < 7; i += 1) {
+    const day = createElementWithId("li");
+    hoursList.appendChild(day);
+  }
   hours.appendChild(hoursList);
   return hours;
 }
