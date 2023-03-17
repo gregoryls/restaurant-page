@@ -23,8 +23,11 @@ function createHours() {
     "Sunday",
   ];
   const hours = createElementWithId("div", "hours");
-  // TODO put hours inside a probabably h2 header
-  hours.textContent = "Hours";
+
+  const hoursHeader = createElementWithId("h2");
+  hoursHeader.textContent = "Hours";
+  hours.appendChild(hoursHeader);
+
   const hoursList = createElementWithId("ul");
   for (let i = 0; i < 7; i += 1) {
     const day = createElementWithId("li");
@@ -38,12 +41,15 @@ function createHours() {
 function createLocation() {
   const locationData = "123 Fake St. Springfield, Il 12345";
   const location = createElementWithId("div", "location");
+
   const locationHeader = createElementWithId("h2");
   locationHeader.textContent = "Location";
   location.appendChild(locationHeader);
+
   const locationString = createElementWithId("p");
   locationString.textContent = locationData;
   location.appendChild(locationString);
+
   return location;
 }
 
