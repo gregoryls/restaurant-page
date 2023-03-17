@@ -35,8 +35,18 @@ function createHours() {
   return hours;
 }
 
+function createLocation() {
+  const locationData = "123 Fake St. Springfield, Il 12345";
+  const location = createElementWithId("div", "location");
+  const locationString = createElementWithId("p");
+  locationString.textContent = locationData;
+  location.appendChild(locationString);
+  return location;
+}
+
 export default function tab1() {
   const content = document.getElementById("content");
   content.appendChild(createReview());
   content.appendChild(createHours());
+  content.appendChild(createLocation());
 }
