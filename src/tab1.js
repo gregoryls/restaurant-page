@@ -13,12 +13,22 @@ function createReview() {
 }
 
 function createHours() {
+  const weekdays = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
   const hours = createElementWithId("div", "hours");
   // TODO put hours inside a probabably h2 header
   hours.textContent = "Hours";
   const hoursList = createElementWithId("ul");
   for (let i = 0; i < 7; i += 1) {
     const day = createElementWithId("li");
+    day.textContent = `${weekdays[i]}: 12PM - 9PM`;
     hoursList.appendChild(day);
   }
   hours.appendChild(hoursList);
