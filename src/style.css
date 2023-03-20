@@ -10,3 +10,7 @@ body img {
   border-radius: 80px;
   /* box-shadow: 0 0 8px 8px #5ca6b9 inset; */
 }
+
+#appetizerContent img {
+  width: 25vw;
+}

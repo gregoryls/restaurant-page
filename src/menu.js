@@ -22,6 +22,7 @@ function appetizers() {
   const appetizer1Text = createElementWithId("p");
   appetizer1Text.textContent = "Beef Stew";
   appetizer1.appendChild(appetizer1Text);
+  // TODO change this to a real app not stew...
   appetizer1.appendChild(importImage(app1Stew));
   appetizerContent.appendChild(appetizer1);
 

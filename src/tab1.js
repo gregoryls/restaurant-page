@@ -8,6 +8,7 @@ export function createElementWithId(element, id) {
 export function importImage(source) {
   const temp = new Image();
   temp.src = source;
+  // temp.id = source;
 
   return temp;
 }
