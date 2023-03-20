@@ -1,4 +1,5 @@
-import { createElementWithId } from "./tab1";
+import { createElementWithId, importImage } from "./tab1";
+import app1Stew from "./app1Stew.jpg";
 
 function menuHeader() {
   const headerWrap = createElementWithId("div", "menuHeader");
@@ -18,6 +19,11 @@ function appetizers() {
   appetizerContent.appendChild(appetizerHeader);
 
   const appetizer1 = createElementWithId("div", "appetizer1");
+  const appetizer1Text = createElementWithId("p");
+  appetizer1Text.textContent = "Beef Stew";
+  appetizer1.appendChild(appetizer1Text);
+  appetizer1.appendChild(importImage(app1Stew));
+  appetizerContent.appendChild(appetizer1);
 
   return appetizerContent;
 }
