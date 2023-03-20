@@ -1,14 +1,7 @@
 import "./style.css";
 import Splash from "./food-splash.jpg";
-import tab1, { createElementWithId } from "./tab1";
+import tab1, { createElementWithId, importImage } from "./tab1";
 import menu from "./menu";
-
-function importImage(source) {
-  const temp = new Image();
-  temp.src = source;
-
-  return temp;
-}
 
 document.body.appendChild(importImage(Splash));
 document.body.appendChild(createElementWithId("div", "content"));

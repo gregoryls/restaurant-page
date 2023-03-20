@@ -4,6 +4,13 @@ export function createElementWithId(element, id) {
   elem.id = id;
   return elem;
 }
+
+export function importImage(source) {
+  const temp = new Image();
+  temp.src = source;
+
+  return temp;
+}
 // TODO put review inside a p probably
 
 function createReview() {
