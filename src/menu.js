@@ -28,17 +28,12 @@ function appetizers() {
 
     return item;
   }
-
+  appetizerContent.appendChild(
+    createMenuItem("Salmon Blini", "appetizer1", app1SalmonBlini)
+  );
   appetizerContent.appendChild(
     createMenuItem("Spinach Puffs", "appetizer2", app2SpinachPuff)
   );
-
-  const appetizer1 = createElementWithId("div", "appetizer1");
-  const appetizer1Text = createElementWithId("p");
-  appetizer1Text.textContent = "Salmon Blini";
-  appetizer1.appendChild(appetizer1Text);
-  appetizer1.appendChild(importImage(app1SalmonBlini));
-  appetizerContent.appendChild(appetizer1);
 
   return appetizerContent;
 }
