@@ -12,5 +12,5 @@ body img {
 }
 
 #appetizerContent img {
-  width: 25vw;
+  width: max(175px, 20vw);
 }
