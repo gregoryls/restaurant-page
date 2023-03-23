@@ -2,6 +2,16 @@ import { createElementWithId, importImage } from "./tab1";
 import app1SalmonBlini from "./app1SalmonBlini.jpg";
 import app2SpinachPuff from "./app2SpinachPuff.jpg";
 
+function createMenuItem(name, id, source) {
+  const item = createElementWithId("div", `${id}`);
+  const itemText = createElementWithId("p");
+  itemText.textContent = `${name}`;
+  item.appendChild(itemText);
+  item.appendChild(importImage(source));
+
+  return item;
+}
+
 function menuHeader() {
   const headerWrap = createElementWithId("div", "menuHeader");
 
@@ -19,15 +29,6 @@ function appetizers() {
   appetizerHeader.textContent = "Appetizers";
   appetizerContent.appendChild(appetizerHeader);
 
-  function createMenuItem(name, id, source) {
-    const item = createElementWithId("div", `${id}`);
-    const itemText = createElementWithId("p");
-    itemText.textContent = `${name}`;
-    item.appendChild(itemText);
-    item.appendChild(importImage(source));
-
-    return item;
-  }
   appetizerContent.appendChild(
     createMenuItem("Salmon Blini", "appetizer1", app1SalmonBlini)
   );
