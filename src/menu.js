@@ -1,5 +1,6 @@
 import { createElementWithId, importImage } from "./tab1";
 import app1SalmonBlini from "./app1SalmonBlini.jpg";
+import app2SpinachPuff from "./app2SpinachPuff.jpg";
 
 function menuHeader() {
   const headerWrap = createElementWithId("div", "menuHeader");
@@ -18,11 +19,24 @@ function appetizers() {
   appetizerHeader.textContent = "Appetizers";
   appetizerContent.appendChild(appetizerHeader);
 
+  function createMenuItem(name, id, source) {
+    const item = createElementWithId("div", `${id}`);
+    const itemText = createElementWithId("p");
+    itemText.textContent = `${name}`;
+    item.appendChild(itemText);
+    item.appendChild(importImage(source));
+
+    return item;
+  }
+
+  appetizerContent.appendChild(
+    createMenuItem("Spinach Puffs", "appetizer2", app2SpinachPuff)
+  );
+
   const appetizer1 = createElementWithId("div", "appetizer1");
   const appetizer1Text = createElementWithId("p");
   appetizer1Text.textContent = "Salmon Blini";
   appetizer1.appendChild(appetizer1Text);
-  // TODO change this to a real app not stew...
   appetizer1.appendChild(importImage(app1SalmonBlini));
   appetizerContent.appendChild(appetizer1);
 
