@@ -1,6 +1,10 @@
 import { createElementWithId, importImage } from "./tab1";
 import app1SalmonBlini from "./app1SalmonBlini.jpg";
 import app2SpinachPuff from "./app2SpinachPuff.jpg";
+import main1BeefStew from "./main1BeefStew.jpg";
+import main2KebabPlatter from "./main2KebabPlatter.jpg";
+import dessert1OreoParfait from "./dessert1OreoParfait.jpg";
+import dessert2Macarons from "./dessert2Macarons.jpg";
 
 function createMenuSectionHeader(type) {
   const content = createElementWithId("section", `content${type}`);
