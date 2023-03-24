@@ -2,6 +2,15 @@ import { createElementWithId, importImage } from "./tab1";
 import app1SalmonBlini from "./app1SalmonBlini.jpg";
 import app2SpinachPuff from "./app2SpinachPuff.jpg";
 
+function createMenuHeader(type) {
+  const content = createElementWithId("section", `content${type}`);
+  content.classList.add("menuItems");
+  const header = createElementWithId("h3", `header${type}`);
+  content.appendChild(header);
+
+  return content;
+}
+
 function createMenuItem(name, id, source) {
   const item = createElementWithId("div", `${id}`);
   const itemText = createElementWithId("p");
@@ -30,14 +39,6 @@ function appetizers() {
   // appetizerHeader.textContent = "Appetizers";
   // appetizerContent.appendChild(appetizerHeader);
 
-  function createMenuHeader(type) {
-    const content = createElementWithId("section", `content${type}`);
-    content.classList.add("menuItems");
-    const header = createElementWithId("h3", `header${type}`);
-    content.appendChild(header);
-
-    return content;
-  }
   const appetizerContent = createMenuHeader("Appetizers");
 
   appetizerContent.appendChild(
