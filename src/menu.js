@@ -23,11 +23,21 @@ function menuHeader() {
 }
 
 function appetizers() {
-  const appetizerContent = createElementWithId("section", "appetizerContent");
+  // TODO look at making the header info a function as well
+  // const appetizerContent = createElementWithId("section", "appetizerContent");
 
-  const appetizerHeader = createElementWithId("h3", "appetizerHeader");
-  appetizerHeader.textContent = "Appetizers";
-  appetizerContent.appendChild(appetizerHeader);
+  // const appetizerHeader = createElementWithId("h3", "appetizerHeader");
+  // appetizerHeader.textContent = "Appetizers";
+  // appetizerContent.appendChild(appetizerHeader);
+
+  function createMenuHeader(type) {
+    const content = createElementWithId("section", `content${type}`);
+    const header = createElementWithId("h3", `header${type}`);
+    content.appendChild(header);
+
+    return content;
+  }
+  const appetizerContent = createMenuHeader("Appetizers");
 
   appetizerContent.appendChild(
     createMenuItem("Salmon Blini", "appetizer1", app1SalmonBlini)
