@@ -2,10 +2,11 @@ import { createElementWithId, importImage } from "./tab1";
 import app1SalmonBlini from "./app1SalmonBlini.jpg";
 import app2SpinachPuff from "./app2SpinachPuff.jpg";
 
-function createMenuHeader(type) {
+function createMenuSectionHeader(type) {
   const content = createElementWithId("section", `content${type}`);
   content.classList.add("menuItems");
   const header = createElementWithId("h3", `header${type}`);
+  header.textContent = type;
   content.appendChild(header);
 
   return content;
@@ -32,14 +33,7 @@ function menuHeader() {
 }
 
 function appetizers() {
-  // TODO look at making the header info a function as well
-  // const appetizerContent = createElementWithId("section", "appetizerContent");
-
-  // const appetizerHeader = createElementWithId("h3", "appetizerHeader");
-  // appetizerHeader.textContent = "Appetizers";
-  // appetizerContent.appendChild(appetizerHeader);
-
-  const appetizerContent = createMenuHeader("Appetizers");
+  const appetizerContent = createMenuSectionHeader("Appetizers");
 
   appetizerContent.appendChild(
     createMenuItem("Salmon Blini", "appetizer1", app1SalmonBlini)
