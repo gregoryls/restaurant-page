@@ -49,8 +49,19 @@ function appetizers() {
   return appetizerContent;
 }
 
+function mains() {
+  const mainsContent = createMenuSectionHeader("Mains");
+
+  mainsContent.appendChild(createMenuItem("Beef Stew", "main1", main1BeefStew));
+  mainsContent.appendChild(
+    createMenuItem("Kebab Platter", "main2", main2KebabPlatter)
+  );
+
+  return mainsContent;
+}
 export default function menu() {
   const content = document.getElementById("content");
   content.appendChild(menuHeader());
   content.appendChild(appetizers());
+  content.appendChild(mains());
 }
