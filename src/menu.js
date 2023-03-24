@@ -32,6 +32,7 @@ function appetizers() {
 
   function createMenuHeader(type) {
     const content = createElementWithId("section", `content${type}`);
+    content.classList.add("menuItems");
     const header = createElementWithId("h3", `header${type}`);
     content.appendChild(header);
 

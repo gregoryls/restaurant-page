@@ -11,6 +11,6 @@ body img {
   /* box-shadow: 0 0 8px 8px #5ca6b9 inset; */
 }
 
-#appetizerContent img {
+.menuItems img {
   width: max(175px, 20vw);
 }
