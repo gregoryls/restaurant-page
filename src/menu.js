@@ -59,9 +59,24 @@ function mains() {
 
   return mainsContent;
 }
+
+function desserts() {
+  const dessertsContent = createMenuSectionHeader("Desserts");
+
+  dessertsContent.appendChild(
+    createMenuItem("Oreo Parfait", "dessert1", dessert1OreoParfait)
+  );
+  dessertsContent.appendChild(
+    createMenuItem("Macarons", "dessert2", dessert2Macarons)
+  );
+
+  return dessertsContent;
+}
+
 export default function menu() {
   const content = document.getElementById("content");
   content.appendChild(menuHeader());
   content.appendChild(appetizers());
   content.appendChild(mains());
+  content.appendChild(desserts());
 }
