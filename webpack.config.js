@@ -5,7 +5,7 @@ module.exports = {
   mode: "development",
   entry: {
     index: "./src/index.js",
-    tab1: "./src/tab1.js",
+    home: "./src/home.js",
     menu: "./src/menu.js",
     contacts: "./src/contacts.js",
   },

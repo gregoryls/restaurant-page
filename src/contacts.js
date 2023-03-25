@@ -1,4 +1,4 @@
-import { createElementWithId } from "./tab1";
+import { createElementWithId } from "./home";
 
 function contact(name, role, phone, email) {
   const contactInfo = createElementWithId("div");

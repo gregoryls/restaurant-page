@@ -1,6 +1,6 @@
 import "./style.css";
 import Splash from "./food-splash.jpg";
-import tab1, { createElementWithId, importImage } from "./tab1";
+import tab1, { createElementWithId, importImage } from "./home";
 import menu from "./menu";
 import contactPage from "./contacts";
 

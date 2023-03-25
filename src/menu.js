@@ -1,4 +1,4 @@
-import { createElementWithId, importImage } from "./tab1";
+import { createElementWithId, importImage } from "./home";
 import app1SalmonBlini from "./app1SalmonBlini.jpg";
 import app2SpinachPuff from "./app2SpinachPuff.jpg";
 import main1BeefStew from "./main1BeefStew.jpg";
