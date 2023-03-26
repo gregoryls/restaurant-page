@@ -16,3 +16,6 @@ body img {
   /* width: max(175px, 20vw); */
   width: 175px;
 }
+#hours ul {
+  list-style-type: none;
+}
