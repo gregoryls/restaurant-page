@@ -1,6 +1,6 @@
 import "./style.css";
 import Splash from "./food-splash.jpg";
-import tab1, { createElementWithId, importImage } from "./home";
+import home, { createElementWithId, importImage } from "./home";
 import menu from "./menu";
 import contactPage from "./contacts";
 
@@ -22,8 +22,31 @@ function createTabButtons() {
   return buttonWrapper;
 }
 
+// function refreshContent(tab) {
+//   const content = document.getElementById("content");
+// }
 function tabSwitching() {
-  const buttons = document.querySelectorAll();
+  const content = document.getElementById("content");
+  // const buttons = document.querySelectorAll("#buttonWrapper button");
+
+  document.getElementById("homeButton").addEventListener("click", () => {
+    console.log("test");
+    content.textContent = "";
+    home();
+  });
+
+  document.getElementById("menuButton").addEventListener("click", () => {
+    console.log("test");
+    content.textContent = "";
+    menu();
+  });
+
+  // TODO change contactpage() to have the same naming scheme
+  document.getElementById("contactButton").addEventListener("click", () => {
+    console.log("test");
+    content.textContent = "";
+    contactPage();
+  });
 }
 
 document.body.appendChild(importImage(Splash));
@@ -36,6 +59,8 @@ document.body.appendChild(createTabButtons());
 
 document.body.appendChild(createElementWithId("div", "content"));
 
-tab1();
+home();
 menu();
 contactPage();
+
+tabSwitching();

@@ -62,7 +62,7 @@ function createLocation() {
   return location;
 }
 
-export default function tab1() {
+export default function home() {
   const content = document.getElementById("content");
   content.appendChild(createReview());
   content.appendChild(createHours());
