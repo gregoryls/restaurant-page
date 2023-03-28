@@ -60,7 +60,5 @@ document.body.appendChild(createTabButtons());
 document.body.appendChild(createElementWithId("div", "content"));
 
 home();
-menu();
-contactPage();
 
 tabSwitching();
