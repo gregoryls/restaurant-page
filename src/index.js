@@ -5,17 +5,25 @@ import menu from "./menu";
 import contactPage from "./contacts";
 
 function createTabButtons() {
+  const buttonWrapper = createElementWithId("div", "buttonWrapper");
+
   const homeButton = createElementWithId("button", "homeButton");
   homeButton.textContent = "Home";
-  document.body.appendChild(homeButton);
+  buttonWrapper.appendChild(homeButton);
 
   const menuButton = createElementWithId("button", "menuButton");
   menuButton.textContent = "Menu";
-  document.body.appendChild(menuButton);
+  buttonWrapper.appendChild(menuButton);
 
   const contactButton = createElementWithId("button", "contactButton");
   contactButton.textContent = "Contact Us";
-  document.body.appendChild(contactButton);
+  buttonWrapper.appendChild(contactButton);
+
+  return buttonWrapper;
+}
+
+function tabSwitching() {
+  const buttons = document.querySelectorAll();
 }
 
 document.body.appendChild(importImage(Splash));
@@ -24,7 +32,7 @@ const title = createElementWithId("h1", "title");
 title.textContent = "Farm2Table";
 document.body.appendChild(title);
 
-createTabButtons();
+document.body.appendChild(createTabButtons());
 
 document.body.appendChild(createElementWithId("div", "content"));
 
