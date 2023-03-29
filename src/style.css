@@ -24,3 +24,16 @@ body img {
   list-style-type: none;
   padding: 0;
 }
+
+#buttonWrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+#buttonWrapper button {
+  background-color: #ffffffa1;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 16px;
+}
