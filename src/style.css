@@ -43,7 +43,8 @@ body img {
   border-bottom: 1px solid black;
 }
 
-/* #content section div:nth-child(even) {
-  padding: 10px;
-  border: 1px solid black;
-} */
+#appetizerWrapper,
+#mainsWrapper,
+#dessertsWrapper {
+  display: flex;
+}

@@ -39,38 +39,48 @@ function menuHeader() {
 function appetizers() {
   const appetizerContent = createMenuSectionHeader("Appetizers");
 
-  appetizerContent.appendChild(
+  const appetizerWrapper = createElementWithId("div", "appetizerWrapper");
+
+  appetizerWrapper.appendChild(
     createMenuItem("Salmon Blini", "appetizer1", app1SalmonBlini, 9.99)
   );
-  appetizerContent.appendChild(
+  appetizerWrapper.appendChild(
     createMenuItem("Spinach Puffs", "appetizer2", app2SpinachPuff, 8.99)
   );
+
+  appetizerContent.appendChild(appetizerWrapper);
 
   return appetizerContent;
 }
 
 function mains() {
   const mainsContent = createMenuSectionHeader("Mains");
+  const mainsWrapper = createElementWithId("div", "mainsWrapper");
 
-  mainsContent.appendChild(
+  mainsWrapper.appendChild(
     createMenuItem("Beef Stew", "main1", main1BeefStew, 15.55)
   );
-  mainsContent.appendChild(
+  mainsWrapper.appendChild(
     createMenuItem("Kebab Platter", "main2", main2KebabPlatter, 13.37)
   );
+
+  mainsContent.appendChild(mainsWrapper);
 
   return mainsContent;
 }
 
 function desserts() {
   const dessertsContent = createMenuSectionHeader("Desserts");
+  const dessertsWrapper = createElementWithId("div", "dessertsWrapper");
 
-  dessertsContent.appendChild(
+  dessertsWrapper.appendChild(
     createMenuItem("Oreo Parfait", "dessert1", dessert1OreoParfait, 3.5)
   );
-  dessertsContent.appendChild(
+  dessertsWrapper.appendChild(
     createMenuItem("Macarons", "dessert2", dessert2Macarons, 9001)
   );
+
+  dessertsContent.appendChild(dessertsWrapper);
 
   return dessertsContent;
 }
