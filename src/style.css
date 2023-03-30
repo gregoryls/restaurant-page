@@ -38,3 +38,12 @@ body img {
   font-size: 16px;
   cursor: pointer;
 }
+
+#content section {
+  border-bottom: 1px solid black;
+}
+
+/* #content section div:nth-child(even) {
+  padding: 10px;
+  border: 1px solid black;
+} */
