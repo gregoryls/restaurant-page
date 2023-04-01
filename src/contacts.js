@@ -28,7 +28,7 @@ export default function contactPage() {
     contact("Jane", "Owner", "111-222-3333", "owner@restaurant.com")
   );
   content.appendChild(
-    contact("john", "Chef", "888-777-6666", "chef@restaurant.com")
+    contact("John", "Chef", "888-777-6666", "chef@restaurant.com")
   );
   content.appendChild(
     contact("Sam", "Waiter", "444-555-6666", "waiter@restaurant.com")
