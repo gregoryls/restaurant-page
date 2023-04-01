@@ -9,7 +9,8 @@ body h1 {
 }
 
 body img {
-  width: 80vw;
+  /* width: 80vw; */
+  height: min(5vh, 300px);
   display: block;
   margin: auto;
   border-radius: 80px;
