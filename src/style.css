@@ -40,6 +40,8 @@ body img {
   cursor: pointer;
 }
 
+/* TODO consider naming divs by id for the borders */
+
 #content > div {
   border: 1px solid black;
   border-radius: 8px;
@@ -54,4 +56,9 @@ body img {
 #mainsWrapper,
 #dessertsWrapper {
   display: flex;
+}
+
+#review {
+  padding: 2vw 10vw;
+  /* margin: 1vh 20vh; */
 }
