@@ -20,6 +20,7 @@ body img {
 .menuItems img {
   /* width: max(175px, 20vw); */
   width: 175px;
+  height: auto;
 }
 #hours ul {
   list-style-type: none;
@@ -56,6 +57,10 @@ body img {
 #mainsWrapper,
 #dessertsWrapper {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: max(20px, 5vw);
+  margin-bottom: 16px;
 }
 
 #review {
