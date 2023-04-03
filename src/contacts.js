@@ -2,6 +2,7 @@ import { createElementWithId } from "./home";
 
 function contact(name, role, phone, email) {
   const contactInfo = createElementWithId("div");
+  contactInfo.classList.add("contact");
 
   const contactName = createElementWithId("h3");
   contactName.textContent = name;
