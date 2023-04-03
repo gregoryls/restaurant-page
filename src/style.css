@@ -51,13 +51,15 @@ body img {
 
 /* TODO consider naming divs by id for the borders */
 
-#content > div {
+#review,
+.contact {
   border: 1px solid black;
   border-radius: 8px;
   /* margin: 1vh 10vh; */
 }
 
 #content section {
+  /* this creates dividing lines between menu sections */
   border-bottom: 1px solid black;
 }
 
@@ -72,13 +74,12 @@ body img {
 }
 
 #review {
-  padding: 2vw 10vw;
-  /* margin: 1vh 20vh; */
+  padding: 2vw;
+  width: 50vw;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
   width: 250px;
-  /* margin: 1vh 20vw; */
 }
