@@ -58,8 +58,9 @@ body img {
   /* margin: 1vh 10vh; */
 }
 
-#content section {
-  /* this creates dividing lines between menu sections */
+#content section,
+#hours {
+  /* this creates dividing lines between various content (menu, hours) */
   border-bottom: 1px solid black;
 }
 
