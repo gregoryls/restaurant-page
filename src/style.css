@@ -46,7 +46,7 @@ body img {
 #content > div {
   border: 1px solid black;
   border-radius: 8px;
-  margin: 1vh 10vh;
+  /* margin: 1vh 10vh; */
 }
 
 #content section {
@@ -66,4 +66,11 @@ body img {
 #review {
   padding: 2vw 10vw;
   /* margin: 1vh 20vh; */
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  /* margin: 1vh 20vw; */
 }
