@@ -16,8 +16,13 @@ export function importImage(source) {
 
 function createReview() {
   const review = createElementWithId("div", "review");
-  review.textContent =
-    "I recently had the pleasure of dining at a farm to table restaurant, and I must say, it was an outstanding experience. From the moment I walked in, the atmosphere was warm and inviting, with a charming rustic decor and a cozy feel. The menu was full of fresh, locally-sourced ingredients, and each dish was prepared with skill and care. -John Eater";
+  const reviewText = createElementWithId("p", "reviewText");
+  reviewText.textContent =
+    "I recently had the pleasure of dining at a farm to table restaurant, and I must say, it was an outstanding experience. From the moment I walked in, the atmosphere was warm and inviting, with a charming rustic decor and a cozy feel. The menu was full of fresh, locally-sourced ingredients, and each dish was prepared with skill and care.";
+  const reviewName = createElementWithId("p", "reviewName");
+  reviewName.textContent = "- John Eater";
+  review.appendChild(reviewText);
+  review.appendChild(reviewName);
   return review;
 }
 
