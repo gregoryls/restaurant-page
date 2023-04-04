@@ -71,7 +71,12 @@ body img {
   align-items: center;
   justify-content: center;
   gap: max(20px, 5vw);
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+}
+#headerMains,
+#headerDesserts,
+#headerAppetizer {
+  margin-top: 0;
 }
 
 #review {
