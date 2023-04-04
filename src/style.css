@@ -75,8 +75,9 @@ body img {
 }
 
 #review {
-  padding: 2vw;
+  padding: 1vw;
   width: 50vw;
+  background-color: rgba(255, 255, 255, 0.315);
 }
 
 .contact {
