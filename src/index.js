@@ -22,12 +22,8 @@ function createTabButtons() {
   return buttonWrapper;
 }
 
-// function refreshContent(tab) {
-//   const content = document.getElementById("content");
-// }
 function tabSwitching() {
   const content = document.getElementById("content");
-  // const buttons = document.querySelectorAll("#buttonWrapper button");
 
   document.getElementById("homeButton").addEventListener("click", () => {
     console.log("test");
@@ -41,7 +37,6 @@ function tabSwitching() {
     menu();
   });
 
-  // TODO change contactpage() to have the same naming scheme
   document.getElementById("contactButton").addEventListener("click", () => {
     console.log("test");
     content.textContent = "";

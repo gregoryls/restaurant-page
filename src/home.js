@@ -8,11 +8,9 @@ export function createElementWithId(element, id) {
 export function importImage(source) {
   const temp = new Image();
   temp.src = source;
-  // temp.id = source;
 
   return temp;
 }
-// TODO put review inside a p probably
 
 function createReview() {
   const review = createElementWithId("div", "review");
