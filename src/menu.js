@@ -7,6 +7,7 @@ import dessert1OreoParfait from "./dessert1OreoParfait.jpg";
 import dessert2Macarons from "./dessert2Macarons.jpg";
 
 function createMenuSectionHeader(type) {
+  // creates a section + header for a given type, such as Appetizers etc
   const content = createElementWithId("section", `content${type}`);
   content.classList.add("menuItems");
   const header = createElementWithId("h3", `header${type}`);
@@ -17,6 +18,7 @@ function createMenuSectionHeader(type) {
 }
 
 function createMenuItem(name, id, source, price) {
+  // creates elements for menu item names prices and an image of the dish
   const item = createElementWithId("div", `${id}`);
   const itemText = createElementWithId("p");
   itemText.textContent = `${name} - $${price}`;
@@ -27,6 +29,7 @@ function createMenuItem(name, id, source, price) {
 }
 
 function menuHeader() {
+  // creates the menu title element at the top of the page
   const headerWrap = createElementWithId("div", "menuHeader");
 
   const header = createElementWithId("h2");
@@ -39,6 +42,7 @@ function menuHeader() {
 function appetizers() {
   const appetizerContent = createMenuSectionHeader("Appetizers");
 
+  // wrap menu items together in a div for easier styling
   const appetizerWrapper = createElementWithId("div", "appetizerWrapper");
 
   appetizerWrapper.appendChild(
