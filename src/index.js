@@ -23,6 +23,8 @@ function createTabButtons() {
 }
 
 function tabSwitching() {
+  // Whenever one of the navigation buttons is clicked the #content div is wiped
+  // clean and the appropriate new module is run to populate the page.
   const content = document.getElementById("content");
 
   document.getElementById("homeButton").addEventListener("click", () => {
