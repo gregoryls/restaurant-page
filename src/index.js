@@ -45,17 +45,20 @@ function tabSwitching() {
     contactPage();
   });
 }
+function initialPageSetup() {
+  // sets up the unchanging aspects of the page
+  document.body.appendChild(importImage(Splash));
 
-document.body.appendChild(importImage(Splash));
+  const title = createElementWithId("h1", "title");
+  title.textContent = "Farm2Table";
+  document.body.appendChild(title);
 
-const title = createElementWithId("h1", "title");
-title.textContent = "Farm2Table";
-document.body.appendChild(title);
+  document.body.appendChild(createTabButtons());
 
-document.body.appendChild(createTabButtons());
+  document.body.appendChild(createElementWithId("div", "content"));
+}
 
-document.body.appendChild(createElementWithId("div", "content"));
-
+// initial running of functions to start the page
+initialPageSetup();
 home();
-
 tabSwitching();
