@@ -47,8 +47,13 @@ function createHours() {
   const hoursList = createElementWithId("ul");
   for (let i = 0; i < 7; i += 1) {
     const day = createElementWithId("li");
-    day.textContent = `${weekdays[i]}: 12PM - 9PM`;
-    hoursList.appendChild(day);
+    if (i === 5 || i === 2) {
+      day.textContent = `${weekdays[i]}: Closed`;
+      hoursList.appendChild(day);
+    } else {
+      day.textContent = `${weekdays[i]}: 12PM - 9PM`;
+      hoursList.appendChild(day);
+    }
   }
   hours.appendChild(hoursList);
   return hours;
