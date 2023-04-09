@@ -29,6 +29,7 @@ function createReview() {
 }
 
 function createHours() {
+  // creates div for the operating hours
   const weekdays = [
     "Monday",
     "Tuesday",
@@ -45,6 +46,7 @@ function createHours() {
   hours.appendChild(hoursHeader);
 
   const hoursList = createElementWithId("ul");
+  // use if statements to select days for different than normal hours
   for (let i = 0; i < 7; i += 1) {
     const day = createElementWithId("li");
     if (i === 5 || i === 2) {
