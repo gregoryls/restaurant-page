@@ -39,7 +39,7 @@ function createHours() {
     "Saturday",
     "Sunday",
   ];
-  const hours = createElementWithId("div", "hours");
+  const hours = createElementWithId("section", "hours");
 
   const hoursHeader = createElementWithId("h2");
   hoursHeader.textContent = "Hours";
