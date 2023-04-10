@@ -4,6 +4,8 @@ import home, { createElementWithId, importImage } from "./home";
 import menu from "./menu";
 import contactPage from "./contacts";
 
+// TODO look at changing some divs to sections
+
 function createTabButtons() {
   const buttonWrapper = createElementWithId("div", "buttonWrapper");
 
