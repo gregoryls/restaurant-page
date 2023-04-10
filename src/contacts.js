@@ -25,15 +25,22 @@ function contact(name, role, phone, email) {
   return contactInfo;
 }
 
-export default function contactPage() {
-  const content = document.getElementById("content");
-  content.appendChild(
+function wrapContacts() {
+  const wrappedContacts = createElementWithId("section", "contactsWrapper");
+  wrappedContacts.appendChild(
     contact("Jane", "Owner", "111-222-3333", "owner@restaurant.com")
   );
-  content.appendChild(
+  wrappedContacts.appendChild(
     contact("John", "Chef", "888-777-6666", "chef@restaurant.com")
   );
-  content.appendChild(
+  wrappedContacts.appendChild(
     contact("Sam", "Waiter", "444-555-6666", "waiter@restaurant.com")
   );
+  return wrappedContacts;
+}
+
+export default function contactPage() {
+  const content = document.getElementById("content");
+
+  content.appendChild(wrapContacts());
 }
