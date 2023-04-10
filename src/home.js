@@ -63,7 +63,7 @@ function createHours() {
 
 function createLocation() {
   const locationData = "123 Fake St. Springfield, Il 12345";
-  const location = createElementWithId("div", "location");
+  const location = createElementWithId("section", "location");
 
   const locationHeader = createElementWithId("h2");
   locationHeader.textContent = "Location";

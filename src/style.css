@@ -58,7 +58,8 @@ body img {
   /* margin: 1vh 10vh; */
 }
 
-#content section,
+#contentAppetizers,
+#contentMains,
 #hours {
   /* this creates dividing lines between various content (menu, hours) */
   border-bottom: 1px solid black;
