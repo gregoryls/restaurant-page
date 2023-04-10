@@ -3,7 +3,6 @@ import { createElementWithId } from "./home";
 function contact(name, role, phone, email) {
   // creates the elements with supplied info for a given contact
 
-  // TODO check to see what happens if arg not supplied
   const contactInfo = createElementWithId("div");
   contactInfo.classList.add("contact");
 

@@ -17,7 +17,7 @@ function createReview() {
   const customerReview =
     "I recently had the pleasure of dining at a farm to table restaurant, and I must say, it was an outstanding experience. From the moment I walked in, the atmosphere was warm and inviting, with a charming rustic decor and a cozy feel. The menu was full of fresh, locally-sourced ingredients, and each dish was prepared with skill and care.";
 
-  const review = createElementWithId("div", "review");
+  const review = createElementWithId("section", "review");
   const reviewText = createElementWithId("p", "reviewText");
   reviewText.textContent = customerReview;
 
